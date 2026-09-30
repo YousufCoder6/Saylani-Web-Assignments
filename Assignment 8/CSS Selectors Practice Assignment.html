@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice - Muhammad Yousuf</title>
+    <style>
+        /* 1. Universal Selector (*) - Applies to all elements */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        /* 2. Type Selector (tag name) - Targets all matching tags */
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        h3 {
+            color: #34495e;
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+
+        /* 3. ID Selector (#id) - Targets a unique element */
+        #main-heading {
+            background-color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* 4. Child Selector (parent > child) - Targets direct children only */
+        .card > p {
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* 5. Descendant Selector (ancestor descendant) - Targets any nested element inside */
+        .container span {
+            background-color: #f1c40f;
+            padding: 2px 5px;
+        }
+
+        /* 6. Adjacent Sibling Selector (element + sibling) - Targets the very next sibling */
+        h4 + p {
+            color: #e74c3c;
+            font-style: italic;
+        }
+
+        /* 7. General Sibling Selector (element ~ sibling) - Targets all siblings that follow */
+        .sibling-box ~ p {
+            background-color: #e8f8f5;
+            padding: 5px;
+            border-left: 4px solid #1abc9c;
+        }
+
+        .box {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h1 id="main-heading">CSS Selectors Practice Assignment</h1>
+        <p><b>Student:</b> Muhammad Yousuf</p>
+        <p><b>Institute:</b> Saylani Mass IT Training</p>
+    </div>
+
+    <!-- Child & Descendant Selector Demo -->
+    <div class="box container">
+        <h3>1. Child & Descendant Selectors</h3>
+        <div class="card">
+            <p>Ye direct child paragraph hai (Child Selector laga hai).</p>
+            <div>
+                <p>Ye nested paragraph hai jiske andar <span>yeh highlight text (Descendant Selector)</span> mojood hai.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adjacent & General Sibling Selector Demo -->
+    <div class="box">
+        <h3>2. Sibling Selectors</h3>
+        <h4 class="sibling-box">Yeh heading hai (Sibling Box)</h4>
+        <p>Yeh pehla paragraph hai jo iske bilkul baad hai (Adjacent Sibling).</p>
+        <p>Yeh dusra paragraph hai (General Sibling).</p>
+        <p>Yeh teesra paragraph hai (General Sibling).</p>
+    </div>
+
+</body>
+</html>

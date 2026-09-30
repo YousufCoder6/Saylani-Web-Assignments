@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Navbar - Muhammad Yousuf</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+        }
+
+        /* Navbar Container */
+        .navbar {
+            background-color: #2c3e50;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Logo Styling */
+        .navbar .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1abc9c;
+            letter-spacing: 1px;
+        }
+
+        /* Nav Links List */
+        .navbar ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 20px;
+        }
+
+        /* Nav Links Styling */
+        .navbar ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .navbar ul li a:hover {
+            background-color: #1abc9c;
+            color: #ffffff;
+        }
+
+        /* Content Section for Demonstration */
+        .content {
+            text-align: center;
+            margin-top: 50px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="logo">Muhammad Yousuf</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="content">
+        <h1>Welcome to My Navbar Assignment</h1>
+        <p>Saylani Mass IT Training - Modern Web Development</p>
+    </div>
+
+</body>
+</html>
